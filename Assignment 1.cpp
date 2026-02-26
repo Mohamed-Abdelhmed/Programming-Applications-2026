@@ -4,7 +4,7 @@ void readin(int scores[], const int n){
         do{
             std::cout<< "Enter score: ";
             std::cin>>scores[i];
-        }while(scores[i] > 0 || scores[i] < 100);
+        }while(scores[i] < 0 || scores[i] > 100);
     }
 }
 int max(const int scores[],const int n){
@@ -71,3 +71,4 @@ int main(){
     printAboveAvg(scores, savg, scount);
 
 }
+
